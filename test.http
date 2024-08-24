@@ -1,0 +1,34 @@
+
+#Get All Books
+GET http://localhost:8080/books
+Accept: appplication/json
+
+
+#Add new book
+POST http://localhost:8080/books
+Accept: appplication/json
+
+{
+    "title": "Clean Code",
+    "author": "Robert C Martin",
+    "genre": "Software Engineering"
+}
+
+#GetById
+GET http://localhost:8080/books/2
+Accept: appplication/json
+
+
+#Update
+PUT http://localhost:8080/books/1
+Accept: appplication/json
+
+{
+    "title": "Clean Code",
+    "author": "Robert C Martin",
+    "genre": "Software Development"
+}
+
+#delete
+DELETE http://localhost:8080/books/2
+Accept: appplication/json
